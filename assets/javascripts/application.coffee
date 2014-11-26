@@ -29,3 +29,4 @@ Dashing.on 'ready', ->
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) )
        $('.gridster > ul').each ->
          $(@).gridster().data('gridster').draggable().disable()
+    Dashing.cycleDashboards({timeInSeconds: 0, stagger: true, page: 1})
